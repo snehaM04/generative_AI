@@ -1,32 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
-
-
-get_ipython().system('pip install bardapi')
-
-
-# In[2]:
-
-
-get_ipython().system('pip install pypdf')
-
-
-# In[21]:
-
-
-
-
-
-# In[23]:
+# In[1]:
 
 
 from pypdf import PdfReader
 from bardapi import Bard
 
 
-# In[5]:
+# In[2]:
 
 
 filename  = 'Attention-Is-All-You-Need.pdf'
@@ -46,7 +28,7 @@ for i in range(0,len(pdfReader.pages)):
   text.append(pageObj)
 
 
-# In[6]:
+# In[3]:
 
 
 # Merge multiple page - to reduce API Calls
@@ -63,7 +45,7 @@ print(f"Original Pages = ",len(text))
 print(f"Compressed Pages = ",len(new_text))
 
 
-# In[7]:
+# In[4]:
 
 
 def get_completion(prompt):
@@ -71,7 +53,7 @@ def get_completion(prompt):
   return response
 
 
-# In[8]:
+# In[5]:
 
 
 for i in range(len(new_text)):
@@ -93,8 +75,7 @@ for i in range(len(new_text)):
         time.sleep(19)  #You can query the model only 3 times in a minute for free, so we need to put some delay
 
 
-# In[ ]:
-
+# In[6]:
 
 with open('bard_summary.txt','w') as out:
     out.write(summary)
