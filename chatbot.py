@@ -6,7 +6,6 @@
 from pypdf import PdfReader
 from bardapi import Bard
 
-
 # In[2]:
 
 
