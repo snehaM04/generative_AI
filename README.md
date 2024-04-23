@@ -1,1 +1,1 @@
-# generative_AI
+#Automated Text Summarization from PDF Documents using Bard AI
