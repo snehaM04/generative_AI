@@ -1,1 +1,1 @@
-#Automated Text Summarization from PDF Documents using Bard AI
+Automated Text Summarization from PDF Documents using Bard AI
