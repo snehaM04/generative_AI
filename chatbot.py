@@ -3,7 +3,6 @@
 
 # In[1]:
 
-
 from pypdf import PdfReader
 from bardapi import Bard
 
