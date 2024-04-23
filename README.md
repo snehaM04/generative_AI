@@ -1,2 +1,1 @@
-PROJECT NAME:
-Automated Text Summarization from PDF Documents using Bard AI
+PROJECT NAME: Automated Text Summarization from PDF Documents using Bard AI
